@@ -1,0 +1,46 @@
+manifest:
+  remotes:
+    - name: JsmnRepo
+      url-base: https://github.com/zserge
+    - name: LairdCP
+      url-base: https://github.com/LairdCP
+    - name: ncs
+      url-base: https://github.com/nrfconnect
+    - name: vascode
+      url-base: https://github.com/vascode
+
+  # Please add items below based on alphabetical order.
+  # These dependencies may need updating if new features are added to the firmware.
+  projects:
+    - name: jsmn
+      path: modules/jsmn
+      revision: 7b6858a5855299d173c5ab2b46e611bf9961cbef
+      remote: JsmnRepo
+    - name: mg100_firmware
+      revision: 657ea541a2136120c337c5f750eda3e368a2c969
+      remote: vascode
+    - name: sdk-nrf
+      path: nrf
+      revision: 4c0d3be2ed4ade4dc3e614e95e6f8e4330d663b4
+      remote: ncs
+      import: true
+    - name: zephyr
+      west-commands: scripts/west-commands.yml
+      revision: e144cc2562d9b09d23608fa67fc17af36fccd0ab
+      remote: LairdCP
+      import: true
+    - name: zephyr_boards
+      path: zephyr/boards/arm
+      revision: d921397ac677e933c479bd59ff22cbba5abb1e4c
+      remote: LairdCP
+    - name: zephyr_framework
+      path: modules/framework
+      revision: 998509f5097ae8cbc2c9b1e0df5453b356814a38
+      remote: LairdCP
+    - name: zephyr_lib
+      path: modules/zephyr_lib
+      revision: dd6e9c0403f0f695f45a8afe3588ae6c0bfbea01
+      remote: LairdCP      
+
+  self:
+    path: mg100_firmware_public_manifest
