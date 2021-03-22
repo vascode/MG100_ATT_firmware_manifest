@@ -16,8 +16,8 @@ manifest:
       path: modules/jsmn
       revision: 7b6858a5855299d173c5ab2b46e611bf9961cbef
       remote: JsmnRepo
-    - name: mg100_firmware
-      revision: d7063921a64e5af00859e73d6b057f1aa32f7b37
+    - name: mg100_ATT
+      revision: 5ae3f84d0bc56c5249f526d9e4a3754f7fb33589
       remote: vascode
     - name: sdk-nrf
       path: nrf
